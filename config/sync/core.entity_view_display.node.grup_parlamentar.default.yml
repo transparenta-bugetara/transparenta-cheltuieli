@@ -4,8 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.grup_parlamentar.body
-    - field.field.node.grup_parlamentar.field_abreviere
     - field.field.node.grup_parlamentar.field_group_logo
+    - field.field.node.grup_parlamentar.field_nume_complet
+    - image.style.medium
     - node.type.grup_parlamentar
   module:
     - image
@@ -23,27 +24,27 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_abreviere:
-    weight: 102
+  field_group_logo:
+    weight: 103
+    label: above
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_nume_complet:
+    weight: 104
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_group_logo:
-    weight: 103
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   langcode: true

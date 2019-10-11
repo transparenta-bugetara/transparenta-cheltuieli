@@ -1,0 +1,19 @@
+uuid: c2c7bf68-8b97-4bbd-83e4-7cb42ced0880
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nume_complet
+    - node.type.grup_parlamentar
+id: node.grup_parlamentar.field_nume_complet
+field_name: field_nume_complet
+entity_type: node
+bundle: grup_parlamentar
+label: 'Nume complet'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

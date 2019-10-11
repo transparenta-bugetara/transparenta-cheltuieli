@@ -1,18 +1,17 @@
-uuid: 5c3c6079-fe66-4734-8a78-0e2285063464
+uuid: 466390fa-8d8b-469b-849f-9ce0b78520c2
 langcode: ro
 status: true
 dependencies:
   config:
-    - field.storage.node.field_abreviere
     - node.type.grup_parlamentar
-id: node.grup_parlamentar.field_abreviere
-field_name: field_abreviere
+id: node.grup_parlamentar.title
+field_name: title
 entity_type: node
 bundle: grup_parlamentar
-label: Abreviere
+label: Nume
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

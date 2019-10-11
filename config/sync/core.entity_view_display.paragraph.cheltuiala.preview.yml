@@ -1,0 +1,59 @@
+uuid: c5cdf9e5-b0a5-4fba-b68d-c8f118a7fa78
+langcode: ro
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.cheltuiala.field_cheltuiala_recurenta
+    - field.field.paragraph.cheltuiala.field_fisiere_justificative
+    - field.field.paragraph.cheltuiala.field_note_cheltuiala
+    - field.field.paragraph.cheltuiala.field_nume_contractant
+    - field.field.paragraph.cheltuiala.field_tip_cheltuiala
+    - field.field.paragraph.cheltuiala.field_titlu_cheltuiala
+    - field.field.paragraph.cheltuiala.field_valoare_cheltuiala
+    - paragraphs.paragraphs_type.cheltuiala
+  module:
+    - text
+id: paragraph.cheltuiala.preview
+targetEntityType: paragraph
+bundle: cheltuiala
+mode: preview
+content:
+  field_note_cheltuiala:
+    type: text_default
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_tip_cheltuiala:
+    weight: 1
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_titlu_cheltuiala:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_valoare_cheltuiala:
+    weight: 2
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+hidden:
+  field_cheltuiala_recurenta: true
+  field_fisiere_justificative: true
+  field_nume_contractant: true

@@ -1,0 +1,25 @@
+uuid: 67730a49-0e8e-43f4-9bed-19d95945d376
+langcode: ro
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - bootstrap_sass
+id: navigareprincipala
+theme: bootstrap_sass
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navigare principală'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

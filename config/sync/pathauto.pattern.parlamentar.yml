@@ -1,0 +1,22 @@
+uuid: c1ac150f-3c70-481d-aff2-f4ffffe534a8
+langcode: ro
+status: true
+dependencies:
+  module:
+    - node
+id: parlamentar
+label: 'Raport Parlamentar'
+type: 'canonical_entities:node'
+pattern: 'raport/[node:field_luna_raport]-[node:field_an_raport]-[node:field_raport_parlamentar:entity:title]'
+selection_criteria:
+  d5add10c-7d5f-4d12-a268-b0013d708e34:
+    id: node_type
+    bundles:
+      raport_parlamentar: raport_parlamentar
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d5add10c-7d5f-4d12-a268-b0013d708e34
+selection_logic: and
+weight: -5
+relationships: {  }

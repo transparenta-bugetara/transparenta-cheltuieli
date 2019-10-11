@@ -1,0 +1,22 @@
+uuid: 7bfcd42e-4251-4878-9997-019dc2c12dd8
+langcode: ro
+status: true
+dependencies:
+  module:
+    - node
+id: pattern_grup_parlamentar
+label: 'Grup Parlamentar'
+type: 'canonical_entities:node'
+pattern: 'grup-parlamentar/[node:title]'
+selection_criteria:
+  1382e0a4-5f10-4cc8-ba08-189e3cacd3d7:
+    id: node_type
+    bundles:
+      grup_parlamentar: grup_parlamentar
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1382e0a4-5f10-4cc8-ba08-189e3cacd3d7
+selection_logic: and
+weight: -5
+relationships: {  }

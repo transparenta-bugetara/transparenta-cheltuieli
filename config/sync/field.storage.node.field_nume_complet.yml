@@ -1,15 +1,15 @@
-uuid: 80fddb18-2899-45a4-b87e-eadef4f77b02
+uuid: 122d51ef-b171-4fd4-921e-97bdd62dcf56
 langcode: ro
 status: true
 dependencies:
   module:
     - node
-id: node.field_abreviere
-field_name: field_abreviere
+id: node.field_nume_complet
+field_name: field_nume_complet
 entity_type: node
 type: string
 settings:
-  max_length: 10
+  max_length: 255
   is_ascii: false
   case_sensitive: false
 module: core

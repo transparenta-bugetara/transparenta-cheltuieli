@@ -5,27 +5,36 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.grup_parlamentar.body
+    - field.field.node.grup_parlamentar.field_group_logo
+    - field.field.node.grup_parlamentar.field_nume_complet
+    - image.style.medium
     - node.type.grup_parlamentar
   module:
-    - text
+    - image
     - user
 id: node.grup_parlamentar.teaser
 targetEntityType: node
 bundle: grup_parlamentar
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
+  field_group_logo:
+    type: image
+    weight: 0
+    region: content
+    label: above
     settings:
-      trim_length: 600
+      image_style: medium
+      image_link: content
     third_party_settings: {  }
+  field_nume_complet:
+    type: string
+    weight: 1
     region: content
-  links:
-    weight: 100
-    settings: {  }
+    label: above
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    region: content
 hidden:
+  body: true
   langcode: true
+  links: true
