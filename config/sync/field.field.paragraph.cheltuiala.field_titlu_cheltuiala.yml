@@ -1,0 +1,19 @@
+uuid: 0a2dba72-07a8-4320-93e4-ec053c3851c8
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titlu_cheltuiala
+    - paragraphs.paragraphs_type.cheltuiala
+id: paragraph.cheltuiala.field_titlu_cheltuiala
+field_name: field_titlu_cheltuiala
+entity_type: paragraph
+bundle: cheltuiala
+label: Titlu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

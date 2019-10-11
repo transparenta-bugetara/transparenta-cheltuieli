@@ -1,0 +1,11 @@
+uuid: 47ede4c2-6fef-4b67-a81d-6217b4821d65
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 35CefWbnzaiytcg3acexxz_GTvuwIjYd_ZTcmmR-tXA
+id: zxx
+label: 'Nu se aplică'
+direction: ltr
+weight: 3
+locked: true

@@ -1,0 +1,21 @@
+uuid: 80fddb18-2899-45a4-b87e-eadef4f77b02
+langcode: ro
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_abreviere
+field_name: field_abreviere
+entity_type: node
+type: string
+settings:
+  max_length: 10
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+uuid: 420e4aa1-5fd9-4b45-a655-16932832a221
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wKD4WsoV_wFgv2vgI4mcAAFSIzrye17ykzdwrnApkfY
+id: html_week
+label: 'Săptămâna în format HTML'
+locked: true
+pattern: Y-\WW

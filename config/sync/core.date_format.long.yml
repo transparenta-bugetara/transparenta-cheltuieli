@@ -1,0 +1,10 @@
+uuid: d6dc6c79-d771-4897-bd89-79d8247062fd
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: og8sWXhBuHbLMw3CoiBEZjgqSyhFBFmcbUW_wLcfNbo
+id: long
+label: 'Data implicită, în format lung'
+locked: false
+pattern: 'l, F j, Y - H:i'

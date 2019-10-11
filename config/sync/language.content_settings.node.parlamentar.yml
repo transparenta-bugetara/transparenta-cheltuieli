@@ -1,0 +1,11 @@
+uuid: 29221f6f-ed4e-4685-8f4c-49ba5365b035
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.parlamentar
+id: node.parlamentar
+target_entity_type_id: node
+target_bundle: parlamentar
+default_langcode: site_default
+language_alterable: false

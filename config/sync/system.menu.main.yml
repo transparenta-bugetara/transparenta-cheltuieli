@@ -1,0 +1,10 @@
+uuid: 82f3a9a8-486d-4b82-b2fc-58ffd12e68cb
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
+id: main
+label: 'Navigare principală'
+description: 'Legături către secțiuni sit'
+locked: true

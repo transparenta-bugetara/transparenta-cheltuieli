@@ -1,0 +1,11 @@
+uuid: 81b083ab-43b5-44d1-a90c-079b771e2f9c
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.raport_parlamentar
+id: node.raport_parlamentar
+target_entity_type_id: node
+target_bundle: raport_parlamentar
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,22 @@
+uuid: ad40d96c-eef2-4e02-a4c5-20c4733ec017
+langcode: ro
+status: true
+dependencies:
+  theme:
+    - seven
+_core:
+  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
+id: seven_local_tasks
+theme: seven
+region: content
+weight: -20
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Taburi
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

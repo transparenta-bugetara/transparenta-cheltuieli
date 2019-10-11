@@ -1,0 +1,14 @@
+uuid: dd429a8d-6c80-4738-955a-83853e8d1a23
+langcode: ro
+status: true
+dependencies: {  }
+id: parlamentar
+label: Parlamentar
+weight: 2
+is_admin: null
+permissions:
+  - 'change own username'
+  - 'create raport_parlamentar content'
+  - 'edit own parlamentar content'
+  - 'edit own raport_parlamentar content'
+  - 'view own unpublished content'

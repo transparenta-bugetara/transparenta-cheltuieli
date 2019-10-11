@@ -1,0 +1,31 @@
+uuid: 3a83721b-6db4-4461-8670-108787ed88e8
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cheltuieli_raport
+    - node.type.raport_parlamentar
+    - paragraphs.paragraphs_type.cheltuiala
+  module:
+    - entity_reference_revisions
+id: node.raport_parlamentar.field_cheltuieli_raport
+field_name: field_cheltuieli_raport
+entity_type: node
+bundle: raport_parlamentar
+label: Cheltuieli
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      cheltuiala: cheltuiala
+    target_bundles_drag_drop:
+      cheltuiala:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

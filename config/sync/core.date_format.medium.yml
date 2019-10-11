@@ -1,0 +1,10 @@
+uuid: 205428e2-436f-4299-91af-7fb4cb36456c
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nzL5d024NjXIX_8TlT6uFAu973lmfkmHklJC-2i9rAE
+id: medium
+label: 'Data implicită, în format mediu'
+locked: false
+pattern: 'D, m/d/Y - H:i'

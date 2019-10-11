@@ -1,0 +1,20 @@
+uuid: b0dc1cc1-70f8-4375-88da-1b0ba0f51d3a
+langcode: ro
+status: true
+dependencies:
+  theme:
+    - bootstrap_sass
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: bootstrap_sass_page_title
+theme: bootstrap_sass
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Titlul paginii'
+  provider: core
+  label_display: '0'
+visibility: {  }

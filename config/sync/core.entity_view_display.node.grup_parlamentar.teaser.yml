@@ -1,0 +1,31 @@
+uuid: bef4e17b-a5dc-4fae-9670-47baaeba06e3
+langcode: ro
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.grup_parlamentar.body
+    - node.type.grup_parlamentar
+  module:
+    - text
+    - user
+id: node.grup_parlamentar.teaser
+targetEntityType: node
+bundle: grup_parlamentar
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

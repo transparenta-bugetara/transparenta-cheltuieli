@@ -1,0 +1,20 @@
+uuid: 9ad58a3d-0062-4d86-8510-2488f1e4035d
+langcode: ro
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_tip_cheltuiala
+field_name: field_tip_cheltuiala
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

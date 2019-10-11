@@ -1,0 +1,11 @@
+uuid: f88393c4-2c45-4d90-889b-52a750ae08c7
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.grup_parlamentar
+id: node.grup_parlamentar
+target_entity_type_id: node
+target_bundle: grup_parlamentar
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,10 @@
+uuid: 57574835-d1af-4810-8a75-833b6f30eef6
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: M7yqicYkU36hRy5p9drAaGBBihhUD1OyujFrAaQ93ZE
+id: html_time
+label: 'Timpul în format HTML'
+locked: true
+pattern: 'H:i:s'

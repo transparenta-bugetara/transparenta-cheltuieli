@@ -1,0 +1,49 @@
+uuid: d28a88d5-4920-4f1d-aec8-e1b8ad2c452a
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.field.node.grup_parlamentar.body
+    - field.field.node.grup_parlamentar.field_abreviere
+    - field.field.node.grup_parlamentar.field_group_logo
+    - node.type.grup_parlamentar
+  module:
+    - image
+    - text
+    - user
+id: node.grup_parlamentar.default
+targetEntityType: node
+bundle: grup_parlamentar
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_abreviere:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_group_logo:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

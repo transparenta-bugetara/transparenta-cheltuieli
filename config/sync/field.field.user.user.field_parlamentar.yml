@@ -1,0 +1,29 @@
+uuid: e8166bd4-e568-4242-a3a7-c3df4bb3271a
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_parlamentar
+    - node.type.parlamentar
+  module:
+    - user
+id: user.user.field_parlamentar
+field_name: field_parlamentar
+entity_type: user
+bundle: user
+label: 'Profil Parlamentar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      parlamentar: parlamentar
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

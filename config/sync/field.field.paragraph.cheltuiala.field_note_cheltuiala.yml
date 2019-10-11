@@ -1,0 +1,21 @@
+uuid: c880be0b-4b3c-4996-89df-6f1a4b3ffca0
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_note_cheltuiala
+    - paragraphs.paragraphs_type.cheltuiala
+  module:
+    - text
+id: paragraph.cheltuiala.field_note_cheltuiala
+field_name: field_note_cheltuiala
+entity_type: paragraph
+bundle: cheltuiala
+label: Note
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

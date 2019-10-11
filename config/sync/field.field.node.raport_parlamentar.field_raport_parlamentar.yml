@@ -1,0 +1,28 @@
+uuid: 1132847e-9f42-441f-bd5c-b71ca101aba4
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_raport_parlamentar
+    - node.type.parlamentar
+    - node.type.raport_parlamentar
+id: node.raport_parlamentar.field_raport_parlamentar
+field_name: field_raport_parlamentar
+entity_type: node
+bundle: raport_parlamentar
+label: Parlamentar
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      parlamentar: parlamentar
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

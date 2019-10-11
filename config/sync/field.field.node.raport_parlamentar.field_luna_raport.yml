@@ -1,0 +1,21 @@
+uuid: 65d2e757-9027-4218-a022-0ec8169172c8
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_luna_raport
+    - node.type.raport_parlamentar
+  module:
+    - options
+id: node.raport_parlamentar.field_luna_raport
+field_name: field_luna_raport
+entity_type: node
+bundle: raport_parlamentar
+label: Lună
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

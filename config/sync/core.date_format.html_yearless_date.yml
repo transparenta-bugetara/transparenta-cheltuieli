@@ -1,0 +1,10 @@
+uuid: 4ea3a51f-bf77-4570-b977-9b31bfc0d780
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5VpawMrKPEPCkoO4YpPa0TDFO2dgiIHfTziJtwlmUxc
+id: html_yearless_date
+label: 'Data fără an în format HTML'
+locked: true
+pattern: m-d

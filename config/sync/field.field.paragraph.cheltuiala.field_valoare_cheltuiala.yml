@@ -1,0 +1,23 @@
+uuid: b6d34f26-f723-4c0d-b5f9-16e83eaddf9c
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_valoare_cheltuiala
+    - paragraphs.paragraphs_type.cheltuiala
+id: paragraph.cheltuiala.field_valoare_cheltuiala
+field_name: field_valoare_cheltuiala
+entity_type: paragraph
+bundle: cheltuiala
+label: Valoare
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 1
+  max: !!float 999999
+  prefix: ''
+  suffix: lei
+field_type: float

@@ -1,0 +1,31 @@
+uuid: 7d4c497c-79f5-45ff-a4f7-5148276e3660
+langcode: ro
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.parlamentar.body
+    - node.type.parlamentar
+  module:
+    - text
+    - user
+id: node.parlamentar.teaser
+targetEntityType: node
+bundle: parlamentar
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

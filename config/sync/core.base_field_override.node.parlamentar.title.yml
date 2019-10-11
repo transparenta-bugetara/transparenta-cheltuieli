@@ -1,0 +1,18 @@
+uuid: b9935677-08bb-4e79-a8b1-ebd0790253f6
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.parlamentar
+id: node.parlamentar.title
+field_name: title
+entity_type: node
+bundle: parlamentar
+label: 'Nume complet'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

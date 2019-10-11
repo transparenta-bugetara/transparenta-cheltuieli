@@ -1,0 +1,10 @@
+uuid: e202ae94-9986-4f16-b2ba-d3d7d02fd2c4
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: M_Bh81osDyUQ4wV0GgU_NdBNqkzM87sLxjaCdFj9mnw
+id: account
+label: 'Meniu cont utilizator'
+description: 'Legături către contul utilizatorului activ'
+locked: true

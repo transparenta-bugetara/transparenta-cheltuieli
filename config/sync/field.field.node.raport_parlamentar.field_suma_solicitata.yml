@@ -1,0 +1,23 @@
+uuid: e688e7f2-68d7-416c-9b31-baac98d49894
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_suma_solicitata
+    - node.type.raport_parlamentar
+id: node.raport_parlamentar.field_suma_solicitata
+field_name: field_suma_solicitata
+entity_type: node
+bundle: raport_parlamentar
+label: 'Suma solicitată'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 999999
+  prefix: ''
+  suffix: lei
+field_type: float

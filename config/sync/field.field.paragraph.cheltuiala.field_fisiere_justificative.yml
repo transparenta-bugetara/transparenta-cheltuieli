@@ -1,0 +1,27 @@
+uuid: 8402862f-1211-43f3-819d-e27f2820f929
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fisiere_justificative
+    - paragraphs.paragraphs_type.cheltuiala
+  module:
+    - file
+id: paragraph.cheltuiala.field_fisiere_justificative
+field_name: field_fisiere_justificative
+entity_type: paragraph
+bundle: cheltuiala
+label: Fișiere
+description: 'Documente justificative'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: documente_cheltuieli
+  file_extensions: 'pdf png jpg jpeg xls xlsx doc docx'
+  max_filesize: '22'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

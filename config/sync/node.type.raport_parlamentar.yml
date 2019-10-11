@@ -1,0 +1,17 @@
+uuid: c22c2ffe-1701-47f7-b180-ac456481584d
+langcode: ro
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Raport Parlamentar'
+type: raport_parlamentar
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

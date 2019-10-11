@@ -1,0 +1,12 @@
+uuid: 87b85841-c2c8-4f0f-91b5-679419eeb2a3
+langcode: ro
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: flXhTcp55yLcyy7ZLOhPGKGZobZQJdkAFVWV3LseiuI
+id: user.register
+label: Înscriere
+targetEntityType: user
+cache: true

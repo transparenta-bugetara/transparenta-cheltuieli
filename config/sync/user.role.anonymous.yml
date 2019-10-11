@@ -1,0 +1,15 @@
+uuid: 02f96e6b-f45a-418d-b9ee-784b2dec62a3
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Utilizatorul anonim'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access user profiles'
+  - 'display eu cookie compliance popup'
+  - 'search content'

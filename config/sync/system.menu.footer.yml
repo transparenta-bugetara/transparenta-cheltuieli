@@ -1,0 +1,10 @@
+uuid: 74a71464-56aa-4d94-b704-d1fe8f065405
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7yrlW5z9zdg2eBucB2GPqXKSMQfH9lSRSO4DbWF7AFc
+id: footer
+label: Subsol
+description: 'Legături către informații sit'
+locked: true

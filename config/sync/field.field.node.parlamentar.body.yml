@@ -1,0 +1,22 @@
+uuid: 08409342-9d62-4726-a508-a98304d1afb5
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.parlamentar
+  module:
+    - text
+id: node.parlamentar.body
+field_name: body
+entity_type: node
+bundle: parlamentar
+label: Descriere
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,23 @@
+uuid: 283df50b-087d-468e-b118-ee4245f02fdb
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cheltuiala_recurenta
+    - paragraphs.paragraphs_type.cheltuiala
+id: paragraph.cheltuiala.field_cheltuiala_recurenta
+field_name: field_cheltuiala_recurenta
+entity_type: paragraph
+bundle: cheltuiala
+label: 'Cheltuială recurentă'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Pornit
+  off_label: Oprit
+field_type: boolean

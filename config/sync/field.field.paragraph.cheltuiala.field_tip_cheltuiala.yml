@@ -1,0 +1,29 @@
+uuid: e90575af-67d9-451a-ab10-88ccdfc2df74
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tip_cheltuiala
+    - paragraphs.paragraphs_type.cheltuiala
+    - taxonomy.vocabulary.tip_cheltuieli
+id: paragraph.cheltuiala.field_tip_cheltuiala
+field_name: field_tip_cheltuiala
+entity_type: paragraph
+bundle: cheltuiala
+label: 'Tip cheltuială'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tip_cheltuieli: tip_cheltuieli
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

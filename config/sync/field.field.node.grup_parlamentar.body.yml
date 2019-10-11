@@ -1,0 +1,22 @@
+uuid: 1c126450-1d0a-439f-84b1-87c9770d2506
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.grup_parlamentar
+  module:
+    - text
+id: node.grup_parlamentar.body
+field_name: body
+entity_type: node
+bundle: grup_parlamentar
+label: Descriere
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,10 @@
+uuid: e4bf131f-3ee2-4852-9c9d-240c79e2aa3f
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OjekiQuX9RbVQ2_8jOHBL94RgYLePqX7wpfNGgcQzrk
+id: html_year
+label: 'An în format HTML'
+locked: true
+pattern: 'Y'

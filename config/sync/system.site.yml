@@ -1,0 +1,15 @@
+uuid: cb5b3e5a-fbdd-4bcf-80a2-be7e26fe78d8
+name: 'Transparenta Cheltuieli'
+mail: diacu.marius@gmaill.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: ro
+default_langcode: ro
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

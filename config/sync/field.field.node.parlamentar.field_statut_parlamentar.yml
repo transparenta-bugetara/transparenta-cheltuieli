@@ -1,0 +1,23 @@
+uuid: 580cbcb3-4913-4f63-8485-631348daf4c8
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_statut_parlamentar
+    - node.type.parlamentar
+  module:
+    - options
+id: node.parlamentar.field_statut_parlamentar
+field_name: field_statut_parlamentar
+entity_type: node
+bundle: parlamentar
+label: Statut
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: active
+default_value_callback: ''
+settings: {  }
+field_type: list_string

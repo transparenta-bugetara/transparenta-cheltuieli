@@ -1,0 +1,17 @@
+uuid: bd0e2315-c23c-46e0-951b-bab279b37d13
+langcode: ro
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Grup Parlamentar'
+type: grup_parlamentar
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

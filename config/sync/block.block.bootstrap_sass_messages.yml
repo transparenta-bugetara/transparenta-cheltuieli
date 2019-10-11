@@ -1,0 +1,22 @@
+uuid: a46add8a-c0e6-4187-8099-40daeed71876
+langcode: ro
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_sass
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: bootstrap_sass_messages
+theme: bootstrap_sass
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mesaje de stare'
+  provider: system
+  label_display: '0'
+visibility: {  }

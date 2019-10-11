@@ -1,0 +1,8 @@
+uuid: 0dad0019-69d4-4ead-bd50-14b352da10c0
+langcode: ro
+status: true
+dependencies: {  }
+name: 'Tip cheltuieli'
+vid: tip_cheltuieli
+description: ''
+weight: 0

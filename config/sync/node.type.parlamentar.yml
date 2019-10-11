@@ -1,0 +1,17 @@
+uuid: 708ecca6-2219-4467-a427-374a660dd6e4
+langcode: ro
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Parlamentar
+type: parlamentar
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

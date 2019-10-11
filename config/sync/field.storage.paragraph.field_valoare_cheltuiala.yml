@@ -1,0 +1,18 @@
+uuid: 71c2d638-054f-44da-ac78-47cd636f12db
+langcode: ro
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_valoare_cheltuiala
+field_name: field_valoare_cheltuiala
+entity_type: paragraph
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

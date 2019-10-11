@@ -1,0 +1,12 @@
+uuid: 63e21cfc-1f1c-4e79-9899-b37a45079f6d
+langcode: ro
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 6GCOQ-jP2RbdbHA5YWQ6bT8CfGbqrBYKOSC_XY4E3ZM
+id: node.search_result
+label: 'Evidențierea intrării în rezultatele căutării'
+targetEntityType: node
+cache: true

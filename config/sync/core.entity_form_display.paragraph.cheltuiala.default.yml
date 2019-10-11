@@ -1,0 +1,75 @@
+uuid: ff4f7170-00f8-4176-9ec5-fb10a3a66ce5
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cheltuiala.field_cheltuiala_recurenta
+    - field.field.paragraph.cheltuiala.field_fisiere_justificative
+    - field.field.paragraph.cheltuiala.field_note_cheltuiala
+    - field.field.paragraph.cheltuiala.field_nume_contractant
+    - field.field.paragraph.cheltuiala.field_tip_cheltuiala
+    - field.field.paragraph.cheltuiala.field_titlu_cheltuiala
+    - field.field.paragraph.cheltuiala.field_valoare_cheltuiala
+    - paragraphs.paragraphs_type.cheltuiala
+  module:
+    - file
+    - text
+id: paragraph.cheltuiala.default
+targetEntityType: paragraph
+bundle: cheltuiala
+mode: default
+content:
+  field_cheltuiala_recurenta:
+    weight: 6
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_fisiere_justificative:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_note_cheltuiala:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_nume_contractant:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tip_cheltuiala:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_titlu_cheltuiala:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_valoare_cheltuiala:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  status: true

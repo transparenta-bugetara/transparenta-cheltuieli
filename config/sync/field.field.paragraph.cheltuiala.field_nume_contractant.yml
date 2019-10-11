@@ -1,0 +1,19 @@
+uuid: 5f3a41a5-ba13-48ab-9b43-a03242430546
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_nume_contractant
+    - paragraphs.paragraphs_type.cheltuiala
+id: paragraph.cheltuiala.field_nume_contractant
+field_name: field_nume_contractant
+entity_type: paragraph
+bundle: cheltuiala
+label: 'Nume contractant'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

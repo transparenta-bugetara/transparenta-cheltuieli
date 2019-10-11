@@ -1,0 +1,21 @@
+uuid: 959b36ad-b97b-426e-bb56-935736ca8c81
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mandate_start_date
+    - node.type.parlamentar
+  module:
+    - datetime
+id: node.parlamentar.field_mandate_start_date
+field_name: field_mandate_start_date
+entity_type: node
+bundle: parlamentar
+label: 'Dată începere mandat'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

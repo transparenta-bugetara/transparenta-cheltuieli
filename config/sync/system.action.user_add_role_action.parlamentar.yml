@@ -1,0 +1,14 @@
+uuid: 0fe3f64d-7460-42f6-914c-8d147bd6828f
+langcode: ro
+status: true
+dependencies:
+  config:
+    - user.role.parlamentar
+  module:
+    - user
+id: user_add_role_action.parlamentar
+label: 'Add the Parlamentar role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: parlamentar

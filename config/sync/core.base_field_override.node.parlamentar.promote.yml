@@ -1,0 +1,22 @@
+uuid: d366f912-d945-4c4e-a227-4a5a8dc21012
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.parlamentar
+id: node.parlamentar.promote
+field_name: promote
+entity_type: node
+bundle: parlamentar
+label: 'Promovat pe prima pagină'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Pornit
+  off_label: Oprit
+field_type: boolean

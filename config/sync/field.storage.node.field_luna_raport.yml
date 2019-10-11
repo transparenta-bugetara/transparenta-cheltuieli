@@ -1,0 +1,57 @@
+uuid: a8eef84c-6b3d-45be-b5a4-93d2c5e70982
+langcode: ro
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_luna_raport
+field_name: field_luna_raport
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Ianuarie
+    -
+      value: '2'
+      label: Februarie
+    -
+      value: '3'
+      label: Martie
+    -
+      value: '4'
+      label: Aprilie
+    -
+      value: '5'
+      label: Mai
+    -
+      value: '6'
+      label: Iunie
+    -
+      value: '7'
+      label: Iulie
+    -
+      value: '8'
+      label: August
+    -
+      value: '9'
+      label: Sepembrie
+    -
+      value: '10'
+      label: Octombrie
+    -
+      value: '11'
+      label: Noiembrie
+    -
+      value: '12'
+      label: Decembrie
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

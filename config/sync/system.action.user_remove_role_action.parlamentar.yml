@@ -1,0 +1,14 @@
+uuid: 03a71dd1-b668-4ea4-84cd-be5858de7076
+langcode: ro
+status: true
+dependencies:
+  config:
+    - user.role.parlamentar
+  module:
+    - user
+id: user_remove_role_action.parlamentar
+label: 'Remove the Parlamentar role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: parlamentar

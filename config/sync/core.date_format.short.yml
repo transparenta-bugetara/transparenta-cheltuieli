@@ -1,0 +1,10 @@
+uuid: e4eda39b-fdc5-4b24-a035-c10fff0f8605
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AlzeyytA8InBgxIG9H2UDJYs3CG98Zj6yRsDKmlbZwA
+id: short
+label: 'Data implicită, în format scurt'
+locked: false
+pattern: 'd/m/Y -H:i'

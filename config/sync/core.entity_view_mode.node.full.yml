@@ -1,0 +1,12 @@
+uuid: d4eeebcb-67b3-465d-b758-6a41989df319
+langcode: ro
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: ElrtInxGjZd7GaapJ5O9n-ugi2hG2IxFivtgn0tHOsk
+id: node.full
+label: 'Întregul conținut'
+targetEntityType: node
+cache: true

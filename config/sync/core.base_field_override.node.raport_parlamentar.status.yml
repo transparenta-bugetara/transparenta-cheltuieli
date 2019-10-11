@@ -1,0 +1,22 @@
+uuid: 1895b9e5-669e-446f-826a-3c27aa35b19a
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.raport_parlamentar
+id: node.raport_parlamentar.status
+field_name: status
+entity_type: node
+bundle: raport_parlamentar
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Pornit
+  off_label: Oprit
+field_type: boolean

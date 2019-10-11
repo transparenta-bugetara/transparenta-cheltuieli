@@ -1,0 +1,10 @@
+uuid: f7159e4a-4ffc-4f2c-9e14-48017fd028dd
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Z7KuCUwM_WdTNvLcoltuX3_8d-s-8FZkTN6KgNwF0eM
+id: html_month
+label: 'Luna în format HTML'
+locked: true
+pattern: Y-m

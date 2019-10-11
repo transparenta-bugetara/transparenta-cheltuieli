@@ -1,0 +1,30 @@
+uuid: 81eda877-98c4-4881-8af0-1d44b6473df4
+langcode: ro
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_statut_parlamentar
+field_name: field_statut_parlamentar
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: active
+      label: Activ
+    -
+      value: inactive
+      label: Inactiv
+    -
+      value: suspended
+      label: Suspendat
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

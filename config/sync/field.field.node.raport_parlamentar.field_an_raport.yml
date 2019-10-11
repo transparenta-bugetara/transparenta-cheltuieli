@@ -1,0 +1,25 @@
+uuid: 854fc457-57b9-4944-a21e-3617ae7396f3
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_an_raport
+    - node.type.raport_parlamentar
+id: node.raport_parlamentar.field_an_raport
+field_name: field_an_raport
+entity_type: node
+bundle: raport_parlamentar
+label: An
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 2019
+default_value_callback: ''
+settings:
+  min: 2000
+  max: 2100
+  prefix: ''
+  suffix: ''
+field_type: integer

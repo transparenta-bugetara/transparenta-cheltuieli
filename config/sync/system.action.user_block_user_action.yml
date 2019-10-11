@@ -1,0 +1,13 @@
+uuid: d2f5640a-8ab9-481e-a604-3ec4567217b3
+langcode: ro
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: DyypzTfThX10FFQw-399qPfEbLLyrhXgQrKPVsmAoJ4
+id: user_block_user_action
+label: 'Blochează utilizatorul(ii) selectat(i)'
+type: user
+plugin: user_block_user_action
+configuration: {  }

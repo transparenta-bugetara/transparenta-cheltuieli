@@ -1,0 +1,11 @@
+uuid: 91e51c83-1115-4dfd-aa77-45a74e89267e
+langcode: ro
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tip_cheltuieli
+id: taxonomy_term.tip_cheltuieli
+target_entity_type_id: taxonomy_term
+target_bundle: tip_cheltuieli
+default_langcode: site_default
+language_alterable: false

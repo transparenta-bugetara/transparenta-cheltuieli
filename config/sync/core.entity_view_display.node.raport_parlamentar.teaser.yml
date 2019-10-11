@@ -1,0 +1,25 @@
+uuid: 4df90a4e-ac62-4278-9f4a-e186df1e4ee5
+langcode: ro
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.raport_parlamentar.field_an_raport
+    - field.field.node.raport_parlamentar.field_luna_raport
+    - node.type.raport_parlamentar
+  module:
+    - user
+id: node.raport_parlamentar.teaser
+targetEntityType: node
+bundle: raport_parlamentar
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_an_raport: true
+  field_luna_raport: true
+  langcode: true

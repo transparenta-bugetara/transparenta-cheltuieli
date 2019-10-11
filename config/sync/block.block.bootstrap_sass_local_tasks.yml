@@ -1,0 +1,22 @@
+uuid: f31b3d29-24a2-430b-af36-1304751c7ad6
+langcode: ro
+status: true
+dependencies:
+  theme:
+    - bootstrap_sass
+_core:
+  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
+id: bootstrap_sass_local_tasks
+theme: bootstrap_sass
+region: content
+weight: -20
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Taburi
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: df1deae6-f7b6-4301-8eec-b0dce78c8275
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.raport_parlamentar
+id: node.raport_parlamentar.title
+field_name: title
+entity_type: node
+bundle: raport_parlamentar
+label: 'Title afișat'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

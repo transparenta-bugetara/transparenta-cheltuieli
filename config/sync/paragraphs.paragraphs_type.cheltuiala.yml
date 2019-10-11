@@ -1,0 +1,9 @@
+uuid: a305d58f-c6f9-4717-969d-a7225d7d7687
+langcode: ro
+status: true
+dependencies: {  }
+id: cheltuiala
+label: Cheltuială
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

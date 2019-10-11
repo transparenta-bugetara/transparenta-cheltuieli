@@ -1,0 +1,28 @@
+uuid: ef6b5e76-ae4e-496f-bec8-4d4d276e052d
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_parlamentar
+  module:
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_parlamentar:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  member_for:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

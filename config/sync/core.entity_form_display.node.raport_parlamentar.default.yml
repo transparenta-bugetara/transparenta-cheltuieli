@@ -1,0 +1,118 @@
+uuid: 1e7f2020-c4f8-4b9d-b6e0-b04a6d5fddce
+langcode: ro
+status: true
+dependencies:
+  config:
+    - field.field.node.raport_parlamentar.field_an_raport
+    - field.field.node.raport_parlamentar.field_cheltuieli_raport
+    - field.field.node.raport_parlamentar.field_luna_raport
+    - field.field.node.raport_parlamentar.field_raport_parlamentar
+    - field.field.node.raport_parlamentar.field_suma_solicitata
+    - node.type.raport_parlamentar
+  module:
+    - paragraphs
+    - path
+id: node.raport_parlamentar.default
+targetEntityType: node
+bundle: raport_parlamentar
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_an_raport:
+    weight: 8
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_cheltuieli_raport:
+    type: entity_reference_paragraphs
+    weight: 12
+    settings:
+      title: Cheltuială
+      title_plural: Cheltuieli
+      edit_mode: preview
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: cheltuiala
+    third_party_settings: {  }
+    region: content
+  field_luna_raport:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_raport_parlamentar:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_suma_solicitata:
+    weight: 9
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 11
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

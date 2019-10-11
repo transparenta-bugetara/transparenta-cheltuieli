@@ -1,0 +1,10 @@
+uuid: f63ceebb-c4c8-47c6-b7c0-0477af3c22bd
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jxfClwZIRXIdcvMrE--WkcZxDGUVoOIE3Sm2NRZlFuE
+id: html_datetime
+label: 'Data și ora în format HTML'
+locked: true
+pattern: 'Y-m-d\TH:i:sO'
