@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
 
 /**
  * Implements hook_form_system_theme_settings_alter() for settings form.
@@ -29,4 +30,43 @@ function bootstrap_sass_form_system_theme_settings_alter(&$form, FormStateInterf
       'bg-white' => t('White'),
       'bg-transparent' => t('Transparent'),
   );
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function bootstrap_sass_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+//  dpm($form_id);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function bootstrap_sass_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  /** @var \Drupal\views\ViewExecutable $view */
+  $view = $form_state->getStorage()['view'];
+  if ($view && $view->id() === 'parlamentari') {
+    $form['title']['#type'] = 'select';
+    $form['title']['#size'] = null;
+    $form['title']['#type'] = 'select';
+    $form['title']['#options'] = ['' => t('-Oricare-')] + [
+      'PLUS' => 'PLUS',
+      'USR' => 'USR',
+    ];
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function bootstrap_sass_preprocess_node(&$variables) {
+  /** @var \Drupal\node\Entity\Node $node */
+  $node = $variables['node'];
+  if ($variables['teaser'] && $node->bundle() === 'grup_parlamentar') {
+    $view_url = Url::fromRoute('view.parlamentari.page', [], [
+      'query' => ['title' => $node->getTitle()],
+    ]);
+    $variables['url'] = $view_url->toString();
+    $variables['content']['field_group_logo'][0]['#url'] = $view_url;
+  }
 }

@@ -44,3 +44,11 @@
 .views-ui-display-tab-actions .dropbutton .form-submit:focus {
     color: $link-color;
 }
+
+.view-grupuri-parlamentare {
+  &.view-display-id-page {
+    .view-content {
+      justify-content: center;
+    }
+  }
+}

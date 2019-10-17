@@ -20,13 +20,13 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_group_logo:
-    weight: 103
-    label: above
+    weight: 3
+    label: hidden
     settings:
       image_style: medium
       image_link: content
@@ -34,15 +34,15 @@ content:
     type: image
     region: content
   field_nume_complet:
-    weight: 104
-    label: above
+    weight: 2
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   links:
-    weight: 100
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -21,20 +21,13 @@ content:
     type: image
     weight: 0
     region: content
-    label: above
+    label: hidden
     settings:
       image_style: medium
       image_link: content
     third_party_settings: {  }
-  field_nume_complet:
-    type: string
-    weight: 1
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
 hidden:
   body: true
+  field_nume_complet: true
   langcode: true
   links: true
