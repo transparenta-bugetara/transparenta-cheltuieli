@@ -6,7 +6,9 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Link;
 use Drupal\Core\Url;
+use Drupal\node\Entity\Node;
 
 /**
  * Implements hook_form_system_theme_settings_alter() for settings form.
@@ -36,7 +38,33 @@ function bootstrap_sass_form_system_theme_settings_alter(&$form, FormStateInterf
  * Implements hook_form_alter().
  */
 function bootstrap_sass_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-//  dpm($form_id);
+  // dpm($form_id);
+  if ($form_id === 'node_raport_parlamentar_form' || $form_id === 'node_raport_parlamentar_edit_form') {
+    $form['title']['#access'] = FALSE;
+    $form['#validate'][] = '_raport_cheltuieli_automatic_title';
+  }
+}
+
+function _raport_cheltuieli_automatic_title(&$form, FormStateInterface $form_state) {
+  $month = $form_state->getValue('field_luna_raport')[0]['value'];
+  $year = $form_state->getValue('field_an_raport')[0]['value'];
+  $month_name = $form['field_luna_raport']['widget']['#options'][$month];
+  $person_id = $form_state->getValue('field_raport_parlamentar')[0]['target_id'];
+  $person = '';
+  if ($person_id) {
+    $person = Node::load($person_id)->label();
+  }
+  $entity_ids = \Drupal::entityQuery('node')
+    ->condition('field_luna_raport', $month)
+    ->condition('field_an_raport', $year)
+    ->condition('field_raport_parlamentar.target_id', $person_id)
+    ->execute();
+  if ($entity_ids) {
+    $form_state->setError($form['field_luna_raport'], t('Exista un raport creat pentru %period.', [
+      '%period' => Link::createFromRoute($month_name . ' ' . $year, 'entity.node.canonical', ['node' => reset($entity_ids)])->toString(),
+    ]));
+  }
+  $form_state->setValue('title', [['value' => 'Raport ' . $month_name . ' ' . $year . ' - ' . $person]]);
 }
 
 /**
@@ -53,6 +81,17 @@ function bootstrap_sass_form_views_exposed_form_alter(&$form, FormStateInterface
       'PLUS' => 'PLUS',
       'USR' => 'USR',
     ];
+  }
+  if ($view && $view->id() === 'raporate_cheltuieli') {
+    $start_year = 2019;
+    $current_year = \Drupal::service('date.formatter')->format(\Drupal::time()->getRequestTime(), 'custom', 'Y');
+    $current_month = \Drupal::service('date.formatter')->format(\Drupal::time()->getRequestTime(), 'custom', 'm');
+    $exposed_input = $view->getExposedInput();
+    $form['field_an_raport_value']['#type'] = 'select';
+    $form['field_an_raport_value']['#size'] = null;
+    $form['field_an_raport_value']['#options'] = array_combine(range($start_year, $current_year), range($start_year, $current_year));
+    $form['field_an_raport_value']['#value'] = !empty($exposed_input['field_an_raport_value']) ? $exposed_input['field_an_raport_value'] : $current_year;
+    $form['field_luna_raport_value']['#value'] = isset($exposed_input['field_luna_raport_value']) ? $exposed_input['field_luna_raport_value'] : $current_month - 1;
   }
 }
 

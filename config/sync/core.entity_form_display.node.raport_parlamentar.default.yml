@@ -10,8 +10,57 @@ dependencies:
     - field.field.node.raport_parlamentar.field_suma_solicitata
     - node.type.raport_parlamentar
   module:
+    - field_group
     - paragraphs
     - path
+third_party_settings:
+  field_group:
+    group_left:
+      children:
+        - title
+        - langcode
+        - uid
+        - created
+        - promote
+        - sticky
+        - path
+        - field_raport_parlamentar
+        - field_luna_raport
+        - field_an_raport
+        - field_suma_solicitata
+        - status
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        label: Left
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-xs-12 col-md-4 col-lg-3'
+        required_fields: false
+      label: Left
+    group_right:
+      children:
+        - field_cheltuieli_raport
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-8 col-lg-9'
+        element: div
+        show_label: false
+        label_element: h3
+        required_fields: false
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Right
 id: node.raport_parlamentar.default
 targetEntityType: node
 bundle: raport_parlamentar
@@ -24,7 +73,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_an_raport:
-    weight: 8
+    weight: 9
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -32,24 +81,24 @@ content:
     region: content
   field_cheltuieli_raport:
     type: entity_reference_paragraphs
-    weight: 12
+    weight: 14
     settings:
       title: Cheltuială
       title_plural: Cheltuieli
       edit_mode: preview
       add_mode: button
       form_display_mode: default
-      default_paragraph_type: cheltuiala
+      default_paragraph_type: _none
     third_party_settings: {  }
     region: content
   field_luna_raport:
-    weight: 7
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_raport_parlamentar:
-    weight: 10
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60
@@ -58,7 +107,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_suma_solicitata:
-    weight: 9
+    weight: 10
     settings:
       placeholder: ''
     third_party_settings: {  }

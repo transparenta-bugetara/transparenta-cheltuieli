@@ -29,3 +29,82 @@ form .form-type-textarea {
 .form-text {
   margin-top: 0 !important;
 }
+
+.form-type-number {
+  input[type="number"] {
+    padding-right: 25px;
+  }
+  .field-suffix {
+    position: absolute;
+    top: 55%;
+    right: 20px;
+  }
+}
+
+.field--name-field-cheltuieli-raport.field--widget-entity-reference-paragraphs {
+  .tabledrag-toggle-weight-wrapper,
+  .tableresponsive-toggle-columns {
+    display: none;
+  }
+  .draggable {
+    .field-multiple-drag,
+    .delta-order {
+      display: none;
+    }
+  }
+  .paragraphs-subform {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .form-group {
+      max-width: 250px;
+      padding: 0 1px;
+      margin: 0;
+    }
+
+    .field--widget-text-textarea {
+      .filter-help, .filter-guidelines {
+        display: none;
+      }
+    }
+
+    .field--widget-file-generic {
+      max-width: 100%;
+      width: 50%;
+
+      details {
+        border: none;
+        & > .details-wrapper {
+          padding: 0;
+        }
+      }
+
+      summary {
+        display: none;
+      }
+
+      .form-group {
+        max-width: 100%;
+      }
+
+      .form-type-managed-file {
+        label {
+          display: none;
+        }
+      }
+    }
+    .form-type-number {
+      .field-suffix {
+        right: 7px;
+      }
+    }
+  }
+}
+
+.node-raport-parlamentar-form {
+  .form-type-vertical-tabs {
+    display: none;
+  }
+}
