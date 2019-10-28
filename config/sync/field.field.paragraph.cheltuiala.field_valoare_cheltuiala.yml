@@ -19,5 +19,5 @@ settings:
   min: !!float 1
   max: !!float 999999
   prefix: ''
-  suffix: lei
+  suffix: ' lei'
 field_type: float

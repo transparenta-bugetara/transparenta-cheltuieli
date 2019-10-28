@@ -38,7 +38,6 @@ function bootstrap_sass_form_system_theme_settings_alter(&$form, FormStateInterf
  * Implements hook_form_alter().
  */
 function bootstrap_sass_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  // dpm($form_id);
   if ($form_id === 'node_raport_parlamentar_form' || $form_id === 'node_raport_parlamentar_edit_form') {
     $form['title']['#access'] = FALSE;
     $form['#validate'][] = '_raport_cheltuieli_automatic_title';
@@ -46,6 +45,7 @@ function bootstrap_sass_form_alter(&$form, FormStateInterface $form_state, $form
 }
 
 function _raport_cheltuieli_automatic_title(&$form, FormStateInterface $form_state) {
+  $nid = $form_state->getFormObject()->getEntity()->id() || 0;
   $month = $form_state->getValue('field_luna_raport')[0]['value'];
   $year = $form_state->getValue('field_an_raport')[0]['value'];
   $month_name = $form['field_luna_raport']['widget']['#options'][$month];
@@ -55,6 +55,8 @@ function _raport_cheltuieli_automatic_title(&$form, FormStateInterface $form_sta
     $person = Node::load($person_id)->label();
   }
   $entity_ids = \Drupal::entityQuery('node')
+    ->condition('nid', $nid, '<>')
+    ->condition('status', TRUE)
     ->condition('field_luna_raport', $month)
     ->condition('field_an_raport', $year)
     ->condition('field_raport_parlamentar.target_id', $person_id)

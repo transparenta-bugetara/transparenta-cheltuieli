@@ -9,9 +9,49 @@ dependencies:
     - image.style.thumbnail
     - node.type.grup_parlamentar
   module:
+    - field_group
     - image
     - path
     - text
+third_party_settings:
+  field_group:
+    group_stanga:
+      children:
+        - title
+        - field_nume_complet
+        - field_group_logo
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: Stanga
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-xs-12 col-md-6 col-lg-6'
+        required_fields: false
+      label: Stanga
+    group_dreapta:
+      children:
+        - body
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-6 col-lg-6'
+        element: div
+        show_label: false
+        label_element: h3
+        required_fields: false
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Dreapta
 id: node.grup_parlamentar.default
 targetEntityType: node
 bundle: grup_parlamentar
@@ -33,7 +73,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_group_logo:
-    weight: 10
+    weight: 3
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -41,7 +81,7 @@ content:
     type: image_image
     region: content
   field_nume_complet:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -84,7 +124,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60

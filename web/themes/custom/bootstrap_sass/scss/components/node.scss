@@ -109,3 +109,64 @@
     }
   }
 }
+
+.field--name-field-suma-solicitata {
+  display: flex;
+  justify-content: center;
+
+  .field__label {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 5px;
+    line-height: 32px;
+    &::after {
+      content: ':';
+    }
+  }
+  .field__item {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: $primary;
+    line-height: 32px;
+  }
+}
+.field--name-field-cheltuieli-raport {
+  > .field__items {
+    display: flex;
+    flex-wrap: wrap;
+
+    > .field__label {
+      font-size: 24px;
+      font-weight: 500;
+      text-align: center;
+    }
+    > .field__item {
+      width: 31%;
+      margin: 1%;
+      border: 1px solid rgba(168, 206, 70, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+      &:hover {
+        box-shadow: 1px 1px 5px 0 #a8ce46;
+      }
+    }
+  }
+}
+.paragraph--type--cheltuiala.paragraph--view-mode--default {
+  > .field {
+    display: flex;
+
+    > .field__label {
+      width: 40%;
+      font-weight: bold;
+      &::after {
+        content: ':';
+      }
+    }
+    > .field__item {
+      width: 55%;
+      margin-left: auto;
+    }
+  }
+}

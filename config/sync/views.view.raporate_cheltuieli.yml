@@ -4,16 +4,15 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_an_raport
-    - field.storage.node.field_cheltuieli_raport
     - field.storage.node.field_luna_raport
     - field.storage.node.field_raport_parlamentar
     - field.storage.node.field_suma_solicitata
     - node.type.raport_parlamentar
     - system.menu.main
   module:
-    - entity_reference_revisions
     - node
     - options
+    - paragraphs
     - user
 id: raporate_cheltuieli
 label: 'Raporate cheltuieli'
@@ -318,9 +317,9 @@ display:
           click_sort_column: value
           type: number_decimal
           settings:
-            thousand_separator: ''
+            thousand_separator: .
             prefix_suffix: true
-            decimal_separator: .
+            decimal_separator: ','
             scale: 2
           group_column: value
           group_columns: {  }
@@ -333,14 +332,14 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_cheltuieli_raport:
-          id: field_cheltuieli_raport
-          table: node__field_cheltuieli_raport
-          field: field_cheltuieli_raport
-          relationship: none
-          group_type: group
+        field_valoare_cheltuiala:
+          id: field_valoare_cheltuiala
+          table: paragraph__field_valoare_cheltuiala
+          field: field_valoare_cheltuiala
+          relationship: field_cheltuieli_raport
+          group_type: sum
           admin_label: ''
-          label: Cheltuieli
+          label: 'Suma justificată'
           exclude: false
           alter:
             alter_text: false
@@ -381,11 +380,18 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_revisions_entity_view
-          settings:
-            view_mode: preview
-          group_column: ''
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: .
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQD
+          prefix: ''
+          suffix: ' lei'
+          click_sort_column: value
+          type: number_decimal
+          settings: {  }
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -393,7 +399,6 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
           field_api_classes: false
           plugin_id: field
         view_node:
@@ -629,12 +634,22 @@ display:
           admin_label: 'field_raport_parlamentar: Content'
           required: false
           plugin_id: standard
+        field_cheltuieli_raport:
+          id: field_cheltuieli_raport
+          table: node__field_cheltuieli_raport
+          field: field_cheltuieli_raport
+          relationship: none
+          group_type: group
+          admin_label: 'field_cheltuieli_raport: Paragraph'
+          required: false
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
       filter_groups:
         operator: AND
         groups:
           1: AND
+      group_by: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -646,7 +661,6 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_an_raport'
-        - 'config:field.storage.node.field_cheltuieli_raport'
         - 'config:field.storage.node.field_luna_raport'
         - 'config:field.storage.node.field_raport_parlamentar'
         - 'config:field.storage.node.field_suma_solicitata'
@@ -678,7 +692,6 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_an_raport'
-        - 'config:field.storage.node.field_cheltuieli_raport'
         - 'config:field.storage.node.field_luna_raport'
         - 'config:field.storage.node.field_raport_parlamentar'
         - 'config:field.storage.node.field_suma_solicitata'

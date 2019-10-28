@@ -41,6 +41,25 @@ form .form-type-textarea {
   }
 }
 
+.field--type-text-with-summary {
+  .filter-wrapper {
+    display: none;
+  }
+}
+
+.field--type-datetime {
+  .label {
+    margin-left: 15px;
+  }
+  .form-type-date {
+    width: 100%;
+
+    input.form-date {
+      width: 100%;
+    }
+  }
+}
+
 .field--name-field-cheltuieli-raport.field--widget-entity-reference-paragraphs {
   .tabledrag-toggle-weight-wrapper,
   .tableresponsive-toggle-columns {
@@ -103,8 +122,13 @@ form .form-type-textarea {
   }
 }
 
-.node-raport-parlamentar-form {
+.node-raport-parlamentar-form,
+.node-parlamentar-form,
+.node-grup-parlamentar-form {
   .form-type-vertical-tabs {
     display: none;
+  }
+  .image-widget-data {
+    float: none;
   }
 }
